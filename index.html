@@ -1,0 +1,764 @@
+<!doctype html>
+<html>
+<head>
+<title>GPA Inquiry Form</title>
+<style>
+
+h1 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	}
+
+p {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px; 
+	}
+	
+body {
+	background-color: #EDC26D;
+	}
+
+	
+.table {
+	align: center;
+	width: 100%;
+	background-color: #fcf7ea;
+	border-radius: 4px;
+	}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #2892D7;
+	height: 60px;
+	color: white;
+	}
+
+body {
+background-color: white;
+font-family: Helvetica;
+}
+
+#hidden {
+display: none;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 18px; 
+}
+
+
+#main {
+width: 80%;
+max-width: 950px;
+border: none;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+width: 100%;
+margin-top: 0;
+border: none;
+padding: 5px;
+color: white;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+
+
+input[type=text]:focus {
+    background-color: lightgray;
+}
+    
+input.button {
+	background-color: #FFBC42;
+	color: black;
+	width: 180px;
+	height: 35px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border: 1px solid black;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+zap {
+	color: green;
+}
+
+zappy {
+	color: red;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+@media (max-width: 480px) {
+.button {
+	margin-bottom: 10px;
+	}
+}
+
+
+</style>
+<body>
+<div id="main">
+<form  id="form1" action=" "/>
+<div id="header">
+<img src="gpa.jpg" width="100%">
+</div>
+<p>Starting with your final or most recent semester, please enter the last <u>60</u> hours and grades received in the table below. The Graduate College calculates your GPA based on the last 60 hours leading to your bachelor's degree.</p>
+
+<p>Please see the example below:</p>
+<ul>
+<li>Course Name (Optional): <mark>Biology 1301</mark></li>
+<li>Credit Hours: <mark>3</mark></li>
+<li>Course Grade: <mark>B</mark></li>
+</ul>
+
+
+
+<table class="table table-condensed">
+<tr>
+	<th>Course Name <i>(Optional)</i></th>
+	<th>Credit Hours</th>
+	<th>Course Grade</th>
+</tr>
+<tr>
+	<td><span>Course 1 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit1">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade1">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 2 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit2">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade2">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 3 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit3">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade3">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 4 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit4">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade4">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 5 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit5">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade5">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 6 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit6">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade6">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 7 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit7">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade7">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 8 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit8">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade8">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 9 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit9">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade9">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 10 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit10">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade10">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 11 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit11">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade11">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 12 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit12">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade12">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 13 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit13">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade13">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 14 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit14">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade14">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 15 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit15">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade15">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 16 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit16">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade16">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 17 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit17">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade17">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 18 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit18">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade18">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 19 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit19">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade19">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 20 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit20">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade20">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 21 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit21">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade21">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 22 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit22">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade22">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 23 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit23">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade23">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 24 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit24">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade24">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+<tr>
+	<td><span>Course 25 </span><input type="text" name="coursename"/></td>
+	<td><select id="credit25">
+ <option value="0">Select</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+</select></td>
+	<td><select id="grade25">
+ <option value="0">Select</option>
+ <option value="4">A</option>
+ <option value="3">B</option>
+ <option value="2">C</option>
+ <option value="1">D</option>
+ <option value="0">F</option>
+</select></td></tr>
+
+
+
+
+
+</table>
+<!--<p><input type="checkbox" name="vehicle" value="undergrad" /> Yes, I wish to receive a copy of this calculation.</p>-->
+</br>
+
+<input type="submit" value="Submit" class="button"/>
+<input type="reset" value="Reset" class="button"/>
+</form>
+<!--
+<p>The sum of credit hours is <span id="sum">___.</span></p>
+<p>The sum of credit hours multiplied by course grade credits is <span id="mult">___.</span></p>-->
+</br>
+</br>
+<h1>Your approximate GPA is <span id="gpa">___.</span></h1>
+<p id ="gpa2"></p>
+<p><span id="hidden">
+    Please contact <a href="http://www.gradcollege.txstate.edu" target="_blank">The Graduate College</a> at 512.245.2581 or gradcollege@txstate.edu if you have any questions!</span></p>
+
+
+</div>
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+
+scredit1 = document.getElementById("credit1").value;
+scredit2 = document.getElementById("credit2").value;
+scredit3 = document.getElementById("credit3").value;
+scredit4 = document.getElementById("credit4").value;
+scredit5 = document.getElementById("credit5").value;
+scredit6 = document.getElementById("credit6").value;
+scredit7 = document.getElementById("credit7").value;
+scredit8 = document.getElementById("credit8").value;
+scredit9 = document.getElementById("credit9").value;
+scredit10 = document.getElementById("credit10").value;
+scredit11 = document.getElementById("credit11").value;
+scredit12 = document.getElementById("credit12").value;
+scredit13 = document.getElementById("credit13").value;
+scredit14 = document.getElementById("credit14").value;
+scredit15 = document.getElementById("credit15").value;
+scredit16 = document.getElementById("credit16").value;
+scredit17 = document.getElementById("credit17").value;
+scredit18 = document.getElementById("credit18").value;
+scredit19 = document.getElementById("credit19").value;
+scredit20 = document.getElementById("credit20").value;
+scredit21 = document.getElementById("credit21").value;
+scredit22 = document.getElementById("credit22").value;
+scredit23 = document.getElementById("credit23").value;
+scredit24 = document.getElementById("credit24").value;
+scredit25 = document.getElementById("credit25").value;
+hourslist = [scredit1, scredit2, scredit3, scredit4, scredit5, scredit6, scredit7, scredit8, scredit9, scredit10, scredit11, scredit12, scredit13, scredit14, scredit15, scredit16, scredit17, scredit18, scredit19, scredit20, scredit21, scredit22, scredit23, scredit24, scredit25];
+hourstotal = 0;
+
+sgrade1 = document.getElementById("grade1").value;
+sgrade2 = document.getElementById("grade2").value;
+sgrade3 = document.getElementById("grade3").value;
+sgrade4 = document.getElementById("grade4").value;
+sgrade5 = document.getElementById("grade5").value;
+sgrade6 = document.getElementById("grade6").value;
+sgrade7 = document.getElementById("grade7").value;
+sgrade8 = document.getElementById("grade8").value;
+sgrade9 = document.getElementById("grade9").value;
+sgrade10 = document.getElementById("grade10").value;
+sgrade11 = document.getElementById("grade11").value;
+sgrade12 = document.getElementById("grade12").value;
+sgrade13 = document.getElementById("grade13").value;
+sgrade14 = document.getElementById("grade14").value;
+sgrade15 = document.getElementById("grade15").value;
+sgrade16 = document.getElementById("grade16").value;
+sgrade17 = document.getElementById("grade17").value;
+sgrade18 = document.getElementById("grade18").value;
+sgrade19 = document.getElementById("grade19").value;
+sgrade20 = document.getElementById("grade20").value;
+sgrade21 = document.getElementById("grade21").value;
+sgrade22 = document.getElementById("grade22").value;
+sgrade23 = document.getElementById("grade23").value;
+sgrade24 = document.getElementById("grade24").value;
+sgrade25 = document.getElementById("grade25").value;
+gradelist = [sgrade1, sgrade2, sgrade3, sgrade4, sgrade5, sgrade6, sgrade7, sgrade8, sgrade9, sgrade10, sgrade11, sgrade12, sgrade13, sgrade14, sgrade15, sgrade16, sgrade17, sgrade18,sgrade19, sgrade20, sgrade21, sgrade22, sgrade23, sgrade24, sgrade25];
+gradetotal = 0;
+
+
+for(i=0;i<hourslist.length; i++) {
+
+hourstotal = hourstotal + parseInt(hourslist[i]);
+
+//document.getElementById("sum").innerHTML = hourstotal;
+}
+
+row1 = scredit1 * sgrade1; 
+row2 = scredit2 * sgrade2;
+row3 = scredit3 * sgrade3;
+row4 = scredit4 * sgrade4; 
+row5 = scredit5 * sgrade5;
+row6 = scredit6 * sgrade6;
+row7 = scredit7 * sgrade7; 
+row8 = scredit8 * sgrade8;
+row9 = scredit9 * sgrade9;
+row10 = scredit10 * sgrade10; 
+row11 = scredit11 * sgrade11;
+row12 = scredit12 * sgrade12;
+row13 = scredit13 * sgrade13; 
+row14 = scredit14 * sgrade14;
+row15 = scredit15 * sgrade15;
+row16 = scredit16 * sgrade16; 
+row17 = scredit17 * sgrade17;
+row18 = scredit18 * sgrade18;
+row19 = scredit19 * sgrade19; 
+row20 = scredit20 * sgrade20;
+row21 = scredit21 * sgrade21;
+row22 = scredit22 * sgrade22;
+row23 = scredit23 * sgrade23; 
+row24 = scredit24 * sgrade24;
+row25 = scredit25 * sgrade25;
+rowlist = [row1, row2, row3, row4, row5, row6, row7, row8, row9, row10, row11, row12, row13, row14, row15, row16, row17, row18, row19, row20, row21, row22, row23, row24, row25];
+rowtotal = 0 
+
+for(i=0;i<hourslist.length; i++) {
+
+rowtotal = rowtotal + parseInt(rowlist[i]);
+
+//document.getElementById("mult").innerHTML = rowtotal;
+}
+
+yrgpa = rowtotal / hourstotal;
+
+document.getElementById("gpa").innerHTML = yrgpa.toFixed(2) + " based on" + " " + hourstotal + " hours.";
+
+
+document.getElementById("gpa").style.textDecoration = "underline";
+
+
+result = rowtotal / hourstotal;
+
+
+if(result >=2.75) {result2 =  "<strong><zap>Awesome! It looks like your GPA meets the 2.75 minimum for The Graduate College.</zap></strong> Please note that some programs require a higher GPA. Please visit your program of interest web page to view their admission requirements. Good luck!"};
+if(result <=2.74) {result2 =  "<strong><zappy>Shucks! It looks like your GPA does not quite meet the 2.75 minimum for The Graduate College.</zappy></strong> Please note that some programs may have conditional admission. Please visit your program of interest web page to view the graduate advisor's contact information. You may also wish to raise your GPA by taking graduate level courses as a non-degree student. Again, it's strongly encouraged to discuss your options with the appropriate graduate advisor. Good luck!"};
+  document.getElementById("gpa2").innerHTML = result2;
+
+
+document.getElementById("hidden").style.display = "block";
+
+return false;
+
+}
+
+
+
+
+</script>
+</body>
+</html>
